@@ -1,0 +1,179 @@
+.input {
+  position: relative;
+  height: 16px;
+  width: 170px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid rgba(213, 212, 220, 1);
+  margin-top: 8px;
+  color: black;
+  outline: none;
+  font-size: 12px;
+  font-family: "Montserrat";
+  animation-timing-function: ease-out;
+  animation-duration: 50ms;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.input:hover {
+  background: rgba(245, 248, 255, 1);
+  background: linear-gradient(0deg, #f5f8ff, #f5f8ff);
+}
+
+.choose label {
+  margin-bottom: 15px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(16, 0, 46, 1);
+  color: #2141b7;
+}
+
+.guest-counts {
+  position: absolute !important;
+  width: 300px;
+  top: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  border: 1px solid #d5d4dc;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 25px;
+  background-color: white;
+  z-index: 9;
+  text-align: center;
+}
+
+.count {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+.clickBtn {
+  border-radius: 3px;
+  border: 1px solid rgba(213, 212, 220, 1);
+}
+
+.guest-counts button {
+  color: #2141b7;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 5px;
+  transition: 0.3s linear;
+}
+
+.guest-counts button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 1599px) {
+  .input {
+    width: 320px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 14px;
+    border: 2px solid rgba(213, 212, 220, 1);
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .choose label {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .input {
+    width: 250px;
+    height: 16px;
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid rgba(213, 212, 220, 1);
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  .choose label {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1200px) {
+  .input {
+    width: 130px;
+    height: 12px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgba(213, 212, 220, 1);
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  .choose label {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+  .guest-counts {
+    width: 300px;
+    top: -150%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 850px) {
+  .input {
+    width: 100% !important;
+    height: 10px;
+    border-radius: 3px;
+    padding: 8px;
+    border: 1px solid rgba(213, 212, 220, 1);
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .choose label {
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+
+  .inpur input::placeholder {
+    font-size: 10px !important;
+  }
+
+  .guest-counts {
+    width: 200px;
+    top: -100px;
+    left: 120%;
+    padding: 15px;
+  }
+}

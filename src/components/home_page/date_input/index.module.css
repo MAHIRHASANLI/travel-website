@@ -1,0 +1,156 @@
+.input {
+  position: relative;
+}
+
+.input input {
+  width: 250px;
+}
+
+.date {
+  position: absolute;
+  left: 50%;
+  top: 75px;
+  transform: translateX(-50%);
+  border: 1px solid #d5d4dc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 9;
+}
+
+.input input {
+  height: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(213, 212, 220, 1);
+  display: block;
+  margin-top: 8px;
+  color: black;
+  outline: none;
+  font-size: 12px;
+  font-family: "Montserrat";
+  animation-timing-function: ease-out;
+  animation-duration: 50ms;
+}
+
+.inpur input::placeholder {
+  font-family: "Montserrat";
+}
+
+.inpur input:active {
+  border: 1px solid rgba(139, 180, 255, 1);
+}
+
+.input input:focus {
+  border: 1px solid rgba(33, 65, 183, 1);
+}
+
+.input input:hover {
+  background: rgba(245, 248, 255, 1);
+  background: linear-gradient(0deg, #f5f8ff, #f5f8ff);
+}
+
+.input label {
+  margin-bottom: 15px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(16, 0, 46, 1);
+  color: #2141b7;
+}
+
+@media only screen and (min-width: 1599px) {
+  .input input {
+    width: 320px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 14px;
+    border: 2px solid rgba(213, 212, 220, 1);
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .input label {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .input input {
+    width: 200px;
+    height: 16px;
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid rgba(213, 212, 220, 1);
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  .input label {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1200px) {
+  .input input {
+    width: 120px;
+    height: 12px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgba(213, 212, 220, 1);
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  .input label {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 850px) {
+  .input {
+    width: 92.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .input input {
+    width: 100%;
+    height: 10px;
+    border-radius: 3px;
+    padding: 8px;
+    border: 1px solid rgba(213, 212, 220, 1);
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .input label {
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+
+  .inpur input::placeholder {
+    font-size: 10px !important;
+  }
+
+  .date {
+    left: 54%;
+    top: 60px;
+    border-radius: 5px;
+    z-index: 9;
+  }
+}

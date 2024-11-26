@@ -1,0 +1,123 @@
+.sec-title h2 {
+  color: white;
+  margin-left: 80px;
+  font-family: "Baskervville";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+}
+
+.sec-title h2::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -80px;
+  width: 69px;
+  height: 2px;
+  background: #f3780c;
+}
+
+.sec-title p {
+  color: white;
+  font-family: "Baskervville", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  width: 500px;
+}
+
+@media only screen and (min-width: 1599px) {
+  .sec-title h2 {
+    margin-left: 90px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .sec-title h2::after {
+    top: 10px;
+    left: -90px;
+    width: 80px;
+    height: 2px;
+  }
+
+  .sec-title p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .sec-title h2 {
+    margin-left: 80px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  .sec-title h2::after {
+    top: 10px;
+    left: -80px;
+    width: 69px;
+    height: 2px;
+  }
+
+  .sec-title p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1200px) {
+  .sec-title h2 {
+    margin-left: 60px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .sec-title h2::after {
+    top: 10px;
+    left: -60px;
+    width: 50px;
+    height: 2px;
+  }
+
+  .sec-title p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 850px) {
+  .sec-title h2 {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .sec-title h2::after {
+    top: 10px;
+    left: -30px;
+    width: 20px;
+    height: 2px;
+  }
+
+  .sec-title p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 100%;
+  }
+}

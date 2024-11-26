@@ -1,0 +1,69 @@
+.howItWorks {
+  width: 85%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.sectionName {
+  margin: 10px 80px 20px;
+  font-family: "Baskervville";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+}
+
+.howItWorks .sectionName::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -80px;
+  width: 69px;
+  height: 2px;
+  background: #f3780c;
+}
+
+.howItWorks_item h5 {
+  font-family: "Baskervville", serif;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 450px;
+  height: 94px;
+}
+
+.howItWorks_item p {
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #707070;
+}
+
+.howItWorks_item img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.turLists {
+  padding: 30px 0 10px;
+  border-bottom: 1px solid #dedede;
+}
+
+.turLists h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #363636;
+}
