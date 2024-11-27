@@ -1,0 +1,99 @@
+.accardion {
+  width: 100%;
+  padding: 5px 10px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 3px;
+}
+
+.accardion h6 {
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.accardion span {
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+@media only screen and (min-width: 1599px) {
+  .accardion {
+    padding: 8px 12px;
+    margin-top: 20px;
+  }
+
+  .accardion h6 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .accardion span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .accardion {
+    padding: 5px 10px;
+    margin-top: 20px;
+  }
+
+  .accardion h6 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .accardion span {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1200px) {
+  .accardion {
+    padding: 5px 10px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .accardion h6 {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .accardion span {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 850px) {
+  .accardion {
+    padding: 0px 5px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .accardion h6 {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .accardion span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}

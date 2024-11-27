@@ -1,42 +1,28 @@
 import css from "./index.module.css";
-import { LuSearch } from "react-icons/lu";
-import { LiaFlagUsaSolid } from "react-icons/lia";
-import { BsChevronDown } from "react-icons/bs";
-import ButtonColorfull from "../../components/buttons/button_colorful";
+
+import HeaderControls from "../../components/header/header_controls";
+import DesktopLinks from "../../components/header/desktop_links";
+import MobileLinks from "../../components/header/mobile_links";
+import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className={css.navbar}>
+    <header className={css.navbar}>
       <div className={css.navbar_item}>
         <div className={css.navbar_links}>
-          <div className={css.logo}>GOGsky</div>
-          <div className={css.navbar_link}>
-            <a href="*">Home</a>
-            <a href="*">Blog</a>
-            <a href="*">Blog</a>
-            <a href="*">Tours</a>
-          </div>
+          <div className={css.logo}>'LOGO'</div>
+          <DesktopLinks />
         </div>
-
-        <div className={css.navbar_searchAndButtons}>
-          <div className={css.search}>
-            <div>
-              <LuSearch />
-            </div>
-
-            <div className={css.flag}>
-              <LiaFlagUsaSolid />
-              <BsChevronDown />
-            </div>
-          </div>
-
-          <div className={css.buttons}>
-            <button>Sign Up</button>
-            <ButtonColorfull>Log in</ButtonColorfull>
-          </div>
+        <HeaderControls />
+        <MobileLinks isOpen={isOpen} />
+        <div className={css.isOpen} onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <IoClose /> : <GiHamburgerMenu />}
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

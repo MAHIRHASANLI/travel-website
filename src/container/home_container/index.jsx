@@ -1,10 +1,10 @@
 import React from "react";
 import HeroSection from "../../sections/home_page/hero_section";
-import HowItWorks from "../../sections/home_page/Worksh";
-import ExploreWorld from "../../sections/home_page/ExploreWorld";
-import Reviews from "../../sections/home_page/Reviews";
-import FagSection from "../../sections/home_page/Fag";
+import ExploreWorld from "../../sections/home_page/other_countries";
+import Reviews from "../../sections/home_page/reviews_section";
+import FagSection from "../../sections/home_page/fag_section";
 import PopularTours from "../../sections/home_page/popular_tours";
+import HowItWorks from "../../sections/home_page/works_section";
 
 const HomeContainer = () => {
   return (

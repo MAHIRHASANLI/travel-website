@@ -14,8 +14,8 @@ const TravelSearchComponent = () => {
   }
   return (
     <form
-      id="search_form"
       className={css["search-form"]}
+      id="search_form"
       onSubmit={handleSubmit}
     >
       <LocationInputComponent />
@@ -24,9 +24,12 @@ const TravelSearchComponent = () => {
 
       <GuestInputComponent />
 
-      <ButtonColorfull>
-        <LuSearch /> Search
-      </ButtonColorfull>
+      <div className={css.btn}>
+        {" "}
+        <ButtonColorfull>
+          <LuSearch /> Search
+        </ButtonColorfull>
+      </div>
     </form>
   );
 };

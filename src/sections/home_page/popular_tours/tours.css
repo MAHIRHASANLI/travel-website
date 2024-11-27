@@ -1,5 +1,6 @@
 .popularTours {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 100px;
   background-color: rgba(28, 28, 59, 1);
   color: white;
 }
@@ -117,22 +118,6 @@
   text-decoration: line-through;
 }
 
-.detail-link {
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  left: 50%;
-  top: 60%;
-  transform: translate(-50%, -50%);
-  z-index: 9;
-  transition: 0.3s all linear;
-}
-
-.image-hotel:hover .detail-link {
-  overflow: visible;
-  opacity: 1;
-}
-
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
@@ -159,7 +144,8 @@
 
 @media only screen and (min-width: 1599px) {
   .popularTours {
-    padding: 100px 0;
+    padding-top: 120px;
+    padding-bottom: 150px;
   }
 
   .swiper {
@@ -188,10 +174,6 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
-  .popularTours {
-    padding: 60px 0;
-  }
-
   .swiper {
     margin-top: -60px;
     padding-top: 80px;
@@ -246,12 +228,12 @@
 
 @media only screen and (min-width: 850px) and (max-width: 1200px) {
   .popularTours {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 80px;
   }
 
-  .swiper {
-    margin-top: -50px;
-    padding-top: 50px;
+  .swiper .gridTemplate:first-child {
+    padding-top: 10px;
   }
 
   .gridTemplate {
@@ -279,12 +261,12 @@
 
 @media only screen and (min-width: 0px) and (max-width: 850px) {
   .popularTours {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 60px;
   }
 
-  .swiper {
-    margin-top: -50px;
-    padding-top: 50px;
+  .swiper .gridTemplate:first-child {
+    padding-top: 10px;
   }
 
   .gridTemplate {

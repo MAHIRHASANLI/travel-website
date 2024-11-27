@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className={`${css.hero_item} container`}>
         <div className={css.content}>
           <h1>
-            Your Adventure Travel Expert in <span>GOGsky</span>
+            Your Adventure Travel Expert in <span>'LOGO'</span>
           </h1>
         </div>
         <TravelSearchComponent />

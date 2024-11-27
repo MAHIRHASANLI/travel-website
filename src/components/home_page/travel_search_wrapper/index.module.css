@@ -56,4 +56,10 @@
     border-radius: 5px;
     flex-wrap: wrap;
   }
+  .btn {
+    margin: auto;
+  }
+  .btn button {
+    width: 200px !important;
+  }
 }

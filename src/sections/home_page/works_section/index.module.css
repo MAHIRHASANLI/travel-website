@@ -1,0 +1,269 @@
+.works {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.title-sect h2,
+.title-sect p {
+  color: #333;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.grid-first-item {
+  grid-column: 1 / 2;
+}
+
+.grid-last-item {
+  grid-column: 2 / 3;
+}
+
+.works-grid h5 {
+  font-family: "Baskervville", serif;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.description p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(112, 112, 112, 1);
+}
+
+.turLists {
+  padding: 10px 0 10px;
+  border-bottom: 1px solid #dedede;
+}
+
+.turLists h4 {
+  margin-bottom: 10px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #363636;
+}
+
+@media only screen and (min-width: 1599px) {
+  .works {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  .works-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+
+  .grid-first-item {
+    grid-column: 1 / 2;
+  }
+
+  .grid-last-item {
+    grid-column: 2 / 3;
+  }
+
+  .description p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 50%;
+    height: 40px;
+    margin: 25px 80px 40px;
+  }
+
+  .turLists {
+    padding: 10px 0 40px;
+    border-bottom: 2px solid #dedede;
+  }
+
+  .turLists h4 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .works {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .works-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .grid-first-item {
+    grid-column: 1 / 2;
+  }
+
+  .grid-last-item {
+    grid-column: 2 / 3;
+  }
+
+  .description p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
+
+  .turLists {
+    padding: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dedede;
+  }
+
+  .turLists h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .turLists p {
+    margin-bottom: 10px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #363636;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1200px) {
+  .works {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .works-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .grid-first-item {
+    grid-column: 1 / 2;
+  }
+
+  .grid-last-item {
+    grid-column: 2 / 3;
+  }
+
+  .turLists {
+    padding: 0;
+    border-bottom: 1px solid #dedede;
+  }
+
+  .turLists h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .turLists p {
+    margin-bottom: 10px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #363636;
+  }
+
+  .description p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 50%;
+    height: 40px;
+    margin: 10px 40px 20px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 850px) {
+  .works {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .works-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .grid-first-item {
+    grid-column: 1 / 2;
+  }
+
+  .grid-last-item {
+    grid-column: 1 / 2;
+  }
+
+  .turLists {
+    margin-top: 0px !important;
+    margin-bottom: -10px !important;
+    border-bottom: 1px solid #dedede;
+  }
+
+  .turLists h4 {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .turLists p {
+    margin-bottom: 0px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #363636;
+  }
+
+  .description p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 100%;
+    height: 40px;
+    margin: 15px 20px 20px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.img-hotel {
+  width: 100%;
+  height: 100%;
+}
+
+.img-hotel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
