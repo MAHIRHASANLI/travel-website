@@ -55,7 +55,7 @@ const ReviewsSlider = () => {
           slidesPerView: 3,
         },
       }}
-      autoplay={{ delay: 5000, disableOnInteraction: true }}
+      autoplay={{ delay: 4000, disableOnInteraction: true }}
       className="mySwiper"
     >
       {array &&

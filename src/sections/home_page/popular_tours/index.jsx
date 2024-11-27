@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 
 import "./tours.css";
 import TitleSectionComponents from "../../../components/title_component";
@@ -62,7 +62,8 @@ const PopularTours = () => {
         <Swiper
           navigation={true}
           loop={true}
-          modules={[Navigation, Autoplay]}
+          effect={"fade"}
+          modules={[EffectFade, Navigation, Autoplay]}
           autoplay={{ delay: 5000, disableOnInteraction: true }}
           className="mySwiper"
         >

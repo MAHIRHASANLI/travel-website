@@ -211,7 +211,7 @@
   .works-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 30px;
   }
 
   .grid-first-item {

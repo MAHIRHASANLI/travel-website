@@ -1,8 +1,6 @@
-/* Footer.module.css */
-
 .footer {
   background-color: #f8f9fa;
-  padding: 50px 0;
+  padding: 50px 20px;
   text-align: left;
   font-family: "Montserrat", sans-serif;
 }
@@ -19,6 +17,7 @@
 .footerSection {
   flex: 1;
   min-width: 200px;
+  margin-bottom: 20px;
 }
 
 .logo h2 {
@@ -60,7 +59,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .searchButton:hover {
@@ -94,4 +93,49 @@ ul li::before {
   margin: 0;
   color: #777;
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footerSection {
+    margin-bottom: 40px;
+  }
+
+  .logo h2 {
+    font-size: 20px;
+  }
+
+  .footerSection p,
+  .menu li a {
+    font-size: 14px;
+  }
+
+  .searchButton {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .logo h2 {
+    font-size: 18px;
+  }
+
+  .footerSection p,
+  .menu li a {
+    font-size: 12px;
+  }
+
+  .searchButton {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
 }
